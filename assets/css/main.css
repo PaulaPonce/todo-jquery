@@ -3,3 +3,17 @@ body{
 	margin: 0;
 	padding: 0;
 }
+.row{
+	margin-bottom: 0;
+}
+
+nav .brand-logo{
+	font-weight: 700;
+}
+
+a.btn{
+	background-color: #ffc400;
+	height: 25px;
+	line-height: 20px;
+	float: right;
+}
