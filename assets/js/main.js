@@ -5,7 +5,7 @@ $(document).ready(function(){
 		var idCounter = 1; //contador para agregar id a cada checkbox, label y su p contenedor
 		if(event.keyCode == 13){
 			var inputVal = $("#tarea").val(); //datos del input
-			
+			//añadir tareas en sección To Do
 			if(inputVal == ""){ //validación input
 				alert("Debes agregar una tarea");
 			}else{ //añade checkbox, label y button a sección To Do
@@ -14,11 +14,16 @@ $(document).ready(function(){
 				idCounter ++; //aumenta el contador de Id
 			}
 		}
-		$(".remove-btn").click(function(){ //click para remover tareas con el botón 'Remove'
-		var parentElement = $(this).parent("p");
-		$(parentElement).remove();
+		//click para remover tareas con el botón 'Remove'
+		$(".remove-btn").click(function(){ 
+			var parentElement = $(this).parent("p");
+			$(parentElement).remove();
+		});
+		//cambiar tareas completadas a sección Completed
+		$(":checkbox").click(function(){ 
+			var parentElement = $(this).parent("p");
+			$("#completed").append(parentElement);
 		});
 	});
-	
 });
 
