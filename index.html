@@ -6,13 +6,44 @@
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,500,700" rel="stylesheet">
 	<!-- CDN Materialize CSS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- main.css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
-<body>
+<body class="grey lighten-3">
+	<header class="row">
+		<nav class="col s12 amber accent-3">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo black-text">To Do App</a>
+			</div>
+		</nav>
+	</header>
+	<section class="container white">
+		<div class="row">
+			<div class="col offset-s3 s6">
+				<form action="#">
+					<div class="input-field">
+						<input id="tarea" type="text" class="validate">
+						<label for="tarea">Ingresa la tarea</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section id="task-cont" class="container white">
+		<div class="row">
+			<div class="col offset-s3 s6">
+				<h6>To Do Items:</h6>
+				<form action="#" id="to-do">
+					
+				</form>
+				<hr>
+			</div>
+		</div>
+	</section>
+
 
 	<!-- CDN JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
