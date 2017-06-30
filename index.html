@@ -5,8 +5,14 @@
 	<title>Manejo de DOM con jQuery</title>
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- Favicon -->
+	<link rel="icon"
+      type="image/ico"
+      href="assets/img/favicon.ico">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=News+Cycle:400,500,700" rel="stylesheet">
+	<!-- FontAwesome -->
+	<script src="https://use.fontawesome.com/b432f04897.js"></script>
 	<!-- CDN Materialize CSS-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- main.css -->
@@ -15,31 +21,34 @@
 <body class="grey lighten-3">
 	<!-- Header -->
 	<header class="row">
-		<nav class="col s12 amber accent-3">
+		<nav class="col s12 pink accent-4">
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo black-text">To Do App</a>
+				<a href="#" class="brand-logo black-text"><i class="fa fa-list" aria-hidden="true"></i> To Do App</a>
 			</div>
 		</nav>
 	</header>
 	<!-- Add Task -->
-	<section class="container white">
+	<section class="container">
 		<div class="row">
-			<div class="col offset-s3 s6">
-				<form action="#">
-					<div class="input-field">
-						<input id="tarea" type="text" class="validate">
-						<label for="tarea">Ingresa la tarea</label>
-					</div>
-				</form>
+			<div class="col offset-s3 s6 card">
+				<div class="card-content">
+					<form action="#">
+						<div class="input-field">
+							<input id="tarea" type="text" class="validate">
+							<label for="tarea">Ingresa la tarea <i class="fa fa-pencil-square-o" aria-hidden="true"></i></label>
+						</div>
+					</form>	
+				</div>
+				
 			</div>
 		</div>
 	</section>
 	<!--To Do -->
-	<section id="task-cont" class="container white">
+	<section id="task-cont" class="container">
 		<div class="row">
-			<div class="col offset-s3 s6">
-				<h6>To Do Items:</h6>
-				<form action="#" id="to-do">
+			<div class="col offset-s3 s6 card">
+				<h6 class="card-title black-text"><i class="fa fa-square-o" aria-hidden="true"></i> To Do Items:</h6>
+				<form action="#" class="card-content" id="to-do">
 					
 				</form>
 				<hr>
@@ -47,11 +56,11 @@
 		</div>
 	</section>
 	<!-- Completed -->
-	<section id="completed-cont" class="container white">
+	<section id="completed-cont" class="container">
 		<div class="row">
-			<div class="col offset-s3 s6">
-				<h6>Completed Items:</h6>
-				<form action="#" id="completed">
+			<div class="col offset-s3 s6 card">
+				<h6 class="card-title black-text"><i class="fa fa-check-square-o" aria-hidden="true"></i> Completed Items:</h6>
+				<form action="#" class="card-content" id="completed">
 					
 				</form>
 			</div>

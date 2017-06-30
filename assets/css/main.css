@@ -2,7 +2,9 @@ body{
 	font-family: 'News Cycle', sans-serif;
 	margin: 0;
 	padding: 0;
+	background-image: url("../img/magenta-wallpapers.png");
 }
+
 .row{
 	margin-bottom: 0;
 }
@@ -11,9 +13,34 @@ nav .brand-logo{
 	font-weight: 700;
 }
 
+.card{
+	background-color: rgba(197, 17, 98, 0.7);
+}
+.card-title{
+	font-weight: 700;
+}
+
 a.btn{
-	background-color: #ffc400;
+	background-color: #d81b60;
 	height: 25px;
 	line-height: 20px;
 	float: right;
+}
+
+ hr{
+ 	border-color: #880e4f;
+ }
+
+.input-field label:not(.label-icon).active{
+	transform: translateY(-160%);
+}
+input:-webkit-autofill,
+input[type=text]:not(.browser-default){
+	background-color: #f8bbd0 !important;
+}
+
+input[type=text]:not(.browser-default).valid,
+input[type=text]:not(.browser-default):focus.valid{
+	border-bottom: 1px solid #880e4f;
+    box-shadow: 0 1px 0 0 #880e4f;
 }

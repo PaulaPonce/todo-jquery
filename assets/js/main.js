@@ -9,7 +9,7 @@ $(document).ready(function(){
 			if(inputVal == ""){ //validación input
 				alert("Debes agregar una tarea");
 			}else{ //añade checkbox, label y button a sección To Do
-				$("#to-do").append("<p id='task-" + idCounter + "'><input type='checkbox' id='chk-" + idCounter + "'/><label class='black-text' for='chk-" + idCounter + "'>" + inputVal + "</label>" + "<a class='btn right-align remove-btn' id='remove-btn-" + idCounter + "'>Remove</a></p>");
+				$("#to-do").append("<p id='task-" + idCounter + "'><input type='checkbox' id='chk-" + idCounter + "'/><label class='black-text' for='chk-" + idCounter + "'>" + inputVal + "</label>" + "<a class='btn right-align remove-btn' id='remove-btn-" + idCounter + "'><i class='fa fa-trash' aria-hidden='true'></i></a></p>");
 				$("#tarea").val(""); //limpia input
 				idCounter ++; //aumenta el contador de Id
 			}
